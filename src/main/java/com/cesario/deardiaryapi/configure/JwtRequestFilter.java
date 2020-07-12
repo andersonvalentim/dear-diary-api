@@ -1,4 +1,4 @@
-package com.cesario.deardiaryapi.configue;
+package com.cesario.deardiaryapi.configure;
 
 import com.cesario.deardiaryapi.services.JwtUserDetailsService;
 import io.jsonwebtoken.ExpiredJwtException;

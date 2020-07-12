@@ -1,4 +1,4 @@
-package com.cesario.deardiaryapi.configue;
+package com.cesario.deardiaryapi.configure;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

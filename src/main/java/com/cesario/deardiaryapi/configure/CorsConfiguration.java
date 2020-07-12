@@ -1,4 +1,4 @@
-package com.cesario.deardiaryapi.configue;
+package com.cesario.deardiaryapi.configure;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
