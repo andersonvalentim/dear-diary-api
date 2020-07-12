@@ -49,7 +49,15 @@ public class SpringBootWebSecuityInitializer extends WebSecurityConfigurerAdapte
 
                 // Não cheque essas requisições
                 .authorizeRequests()
-                .antMatchers("/login", "/sign-up")
+                .antMatchers("/login",
+                        "/sign-up",
+                        "/v2/api-docs",
+                        "/configuration/ui",
+                        "/swagger-resources/**",
+                        "/configuration/**",
+                        "/swagger-ui.html",
+                        "/webjars/**"
+                        )
                 .permitAll()
 
                 // Qualquer outra requisição deve ser checada

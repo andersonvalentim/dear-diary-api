@@ -20,11 +20,10 @@ public class SwaggerConfig {
     @Bean
     public Docket agendaApi() {
         return new Docket(DocumentationType.SWAGGER_2).select()
-                .apis(RequestHandlerSelectors.basePackage("com.cesario"))// pacote onde estão todas as classes
-                .paths(PathSelectors.regex("/deardiaryapi.*"))// mostra o caminho que ele pode acessar
-                .build().apiInfo(informacoesAPI());
+                .apis(RequestHandlerSelectors.basePackage("com.cesario.deardiaryapi"))
+                .build().apiInfo(ApiInformations());
     }
-    private ApiInfo informacoesAPI() {
+    private ApiInfo ApiInformations() {
         ApiInfo apiInfo = new ApiInfo("Dear Diary API", "",
                 "1.0", "Terms of Service", new Contact("Cesário Pereira Neto", null, "cesariopereiraneto@gmail.com"),
                 "", "", new ArrayList<VendorExtension>());
