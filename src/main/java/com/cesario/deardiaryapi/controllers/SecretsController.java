@@ -22,7 +22,7 @@ public class SecretsController {
     @ApiOperation(value ="This method returns a list of secrets in json.")
     @GetMapping(value = "/list-secrets")
     public List<Secret> listSecrets(){
-        return secretRepository.findAll(Sort.by(Sort.Direction.ASC, "publicationDate"));
+        return secretRepository.findAll(Sort.by(Sort.Direction.DESC, "publicationDate"));
     }
 
     @ApiOperation(value = "\n" +
