@@ -5,6 +5,7 @@ import com.cesario.deardiaryapi.repository.SecretRepository;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Calendar;
@@ -21,7 +22,7 @@ public class SecretsController {
     @ApiOperation(value ="This method returns a list of secrets in json.")
     @GetMapping(value = "/list-secrets")
     public List<Secret> listSecrets(){
-        return secretRepository.findAll();
+        return secretRepository.findAll(Sort.by(Sort.Direction.ASC, "publicationDate"));
     }
 
     @ApiOperation(value = "\n" +
