@@ -19,7 +19,7 @@ public class SecretsController {
     SecretRepository secretRepository;
 
     @ApiOperation(value ="This method returns a list of secrets in json.")
-    @GetMapping(value = "/secrets")
+    @GetMapping(value = "/list-secrets")
     public List<Secret> listSecrets(){
         return secretRepository.findAll();
     }
@@ -27,7 +27,7 @@ public class SecretsController {
     @ApiOperation(value = "\n" +
             "Adds a secret to the database. In this operation, the data is sent " +
             "in json receiving the parameters: subject, content and publicationDate.")
-    @PostMapping(value = "/secret")
+    @PostMapping(value = "/insert-secret")
     public Secret insertSecret(@RequestBody Secret secret){
         secret.setPublicationDate(Calendar.getInstance());
         return secretRepository.save(secret);
@@ -35,7 +35,7 @@ public class SecretsController {
 
     @ApiOperation(value = "Edit a secret. In this operation, the data is sent in json receiving " +
             "the parameters: subject, content and publicationDate.")
-    @PutMapping(value = "/secret")
+    @PutMapping(value = "/update-secret")
     public Secret updateSecret(@RequestBody Secret secret){
         return secretRepository.save(secret);
     }
@@ -43,7 +43,7 @@ public class SecretsController {
     @ApiOperation(value = "\n" +
             "Deletes a secret. In this operation, data is sent in json receiving the parameters: " +
             "subject, content and publicationDate.")
-    @DeleteMapping(value = "/secret")
+    @DeleteMapping(value = "/delete-secret")
     public void deleteSecret(@RequestBody Secret secret){
         secretRepository.delete(secret);
     }
