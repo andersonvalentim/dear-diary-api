@@ -37,14 +37,16 @@ public class SecretsController {
             "the parameters: subject, content and publicationDate.")
     @PutMapping(value = "/update-secret")
     public Secret updateSecret(@RequestBody Secret secret){
+        secret.setPublicationDate(Calendar.getInstance());
         return secretRepository.save(secret);
     }
 
     @ApiOperation(value = "\n" +
             "Deletes a secret. In this operation, data is sent in json receiving the parameters: " +
             "subject, content and publicationDate.")
-    @DeleteMapping(value = "/delete-secret")
-    public void deleteSecret(@RequestBody Secret secret){
+    @DeleteMapping(value = "/delete-secret/{id}")
+    public void deleteSecret(@PathVariable long id){
+        Secret secret = secretRepository.findById(id);
         secretRepository.delete(secret);
     }
 
