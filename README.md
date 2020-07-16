@@ -2,30 +2,30 @@
 - Link da API: https://dear-diary-api.herokuapp.com/ 
 - Link para frontend: https://mydeardiary.netlify.app/ 
 - Documentação: https://dear-diary-api.herokuapp.com/swagger-ui.html 
-- Repositorio do frontend: https://github.com/cesarionto/dear-diary 
+- Repositório do frontend: https://github.com/cesarionto/dear-diary 
 
 ## Características
 
 - A Aplicação foi desenvolvida a partir da arquitetura REST(Roy Fielding).
 - Para o teste de requisições foi utilizado o Postman.
-- Para a persistencia de dados foi utilizado o SGBD PostgreSQL.
-- Para o Mapeamento de Entidades foi utilizado JPA e Hibernate.
+- Para a persistência de dados foi utilizado o SGBD PostgreSQL.
+- Para o mapeamento de entidades foi utilizado JPA e Hibernate.
 - Aplicação desenvolvida com o Springboot e SpringSecurity.
 - Utiliza o método de autenticação de usuarios com JWT.
 - Para o consumo da API, foi desenvolvido um APP React.
-- Aplicação Publicada no HEROKU.
+- Aplicação publicada no HEROKU.
 
 ## Para testar em localhost
 Clone e Descompacte o arquivo <br/>
 - Instale o Postman.
 - Instale o SGBD PostgreSQL de maneira que o usuario e senha do banco seja postgres.
 - Crie um banco de dados local chamado deardiarydb.
-- Importe o projeto Maven na IDE e Preferencia. 
+- Importe o projeto Maven na IDE e Preferência. 
 - Inicie o Projeto.
 - Inicie o Postman.
 - Configure todas as requisições POST para: Headers: Key = Content-Typr e value = Application/json.
 ## Testando as Requisições da API Localmente
-- Crie um Novo Usuario POST: https://localhost:8080/sign-up
+- Crie um Novo Usuário POST: https://localhost:8080/sign-up
 ```json
 {
     "fullName": "",
@@ -40,7 +40,7 @@ Clone e Descompacte o arquivo <br/>
     "password" : ""
 }
 ```
--- O sistema retornara um token JWT, salve em Authorization Bearer Token.
+-- O sistema retornará um token JWT, salve em Authorization Bearer Token.
 <br/>
 - Insira um segredo POST: https://localhost:8080/insert-secret
 ```json
