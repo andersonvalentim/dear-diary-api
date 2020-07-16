@@ -59,7 +59,7 @@ Clone e Descompacte o arquivo <br/>
 - Atualize um segredo PUT: https://localhost:8080/update-secret
 ```json
 {
-    "id" : NUMERO INTEIRO
+    "id" : 1,
     "subject": "",
     "content" : ""
 }
