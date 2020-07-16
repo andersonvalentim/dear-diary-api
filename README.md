@@ -17,13 +17,13 @@
 
 ## Para testar em localhost
 Clone e Descompacte o arquivo <br/>
-- Instale o Postman
+- Instale o Postman.
 - Instale o SGBD PostgreSQL de maneira que o usuario e senha do banco seja postgres.
 - Crie um banco de dados local chamado deardiarydb.
 - Importe o projeto Maven na IDE e Preferencia. 
-- Inicie o Projeto
-- Inicie o Postman
-- Configure todas as requisições poste para: Headers: Key = Content-Typr e value = Application/json
+- Inicie o Projeto.
+- Inicie o Postman.
+- Configure todas as requisições POST para: Headers: Key = Content-Typr e value = Application/json.
 ## Testando as Requisições da API Localmente
 - Crie um Novo Usuario POST: https://localhost:8080/sign-up
 ```json
