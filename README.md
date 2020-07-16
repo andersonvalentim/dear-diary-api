@@ -1,9 +1,5 @@
 # Dear Diary API v1.0 
-- Link da API: https://dear-diary-api.herokuapp.com/ 
-- Link para frontend: https://mydeardiary.netlify.app/ 
-- Documentação: https://dear-diary-api.herokuapp.com/swagger-ui.html 
-- Repositório do frontend: https://github.com/cesarionto/dear-diary 
-
+O projeto trata-se de uma API REST de um diario pessoal onde é possivel manipular todas as operações CRUD.
 ## Características
 
 - A Aplicação foi desenvolvida a partir da arquitetura REST(Roy Fielding).
@@ -15,6 +11,12 @@
 - Para o consumo da API, foi desenvolvido um APP React.
 - Aplicação publicada no HEROKU.
 
+## Links
+- Link da API: https://dear-diary-api.herokuapp.com/ 
+- Link para frontend: https://mydeardiary.netlify.app/ 
+- Documentação: https://dear-diary-api.herokuapp.com/swagger-ui.html 
+- Repositório do frontend: https://github.com/cesarionto/dear-diary 
+
 ## Para testar em localhost
 Clone e Descompacte o arquivo <br/>
 - Instale o Postman.
@@ -24,6 +26,7 @@ Clone e Descompacte o arquivo <br/>
 - Inicie o Projeto.
 - Inicie o Postman.
 - Configure todas as requisições POST para: Headers: Key = Content-Typr e value = Application/json.
+
 ## Testando as Requisições da API Localmente
 - Crie um Novo Usuário POST: https://localhost:8080/sign-up
 ```json
@@ -67,4 +70,3 @@ Clone e Descompacte o arquivo <br/>
 - Delete um segredo DELETE: https://localhost:8080/delete-secret/{id}
 
 Ps: O processo acima pode ser feito no POSTMAN.
-<br/>
