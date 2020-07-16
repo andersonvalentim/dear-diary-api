@@ -22,8 +22,8 @@ Adicionalmente, é exposta uma API REST, desenvolvida com outras característica
 
 ## Para testar em localhost
 Clone e Descompacte o arquivo <br/>
-- Instale o Postman. (como?)
-- Instale o SGBD PostgreSQL de maneira que o usuario e senha do banco seja postgres.
+- Instale o Postman disponível em: https://www.postman.com/.
+- Instale o SGBD PostgreSQL (https://www.postgresql.org/download/) de maneira que o usuario e senha do banco seja postgres.
 - Crie um banco de dados local chamado deardiarydb.
 - Importe o projeto Maven na IDE e Preferência. 
 - Inicie o Projeto.
