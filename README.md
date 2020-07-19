@@ -55,13 +55,6 @@ Clone e Descompacte o arquivo <br/>
     "content" : ""
 }
 ```
-- Liste os segredos GET: https://localhost:8080/list-secrets
-```json
-{
-    "subject": "",
-    "content" : ""
-}
-```
 - Atualize um segredo PUT: https://localhost:8080/update-secret
 ```json
 {
@@ -70,6 +63,10 @@ Clone e Descompacte o arquivo <br/>
     "content" : ""
 }
 ```
+
 - Delete um segredo DELETE: https://localhost:8080/delete-secret/{id}
+
+- Liste os segredos GET: https://localhost:8080/list-secrets
+
 
 O processo acima também pode ser feito no POSTMAN.
